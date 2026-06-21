@@ -1,0 +1,97 @@
+/* Remove default spacing */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Entire page */
+
+body{
+
+    background-image: url("images/backgroundofsite.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color:#50B59A;
+
+    font-family: "Marcellus", serif;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+}
+
+/* Main content */
+
+main{
+
+    text-align:center;
+
+}
+
+/* Logo */
+
+.logo{
+
+    width:850px;
+
+    margin-bottom:25px;
+}
+
+/* Name */
+
+h1{
+    font-family: "Marcellus", serif;
+
+    font-size:4rem;
+
+    margin-bottom:10px;
+
+    font-weight:bold;
+}
+
+/* Small subtitle */
+
+.subtitle{
+
+    font-size:2rem;
+
+    margin-bottom:40px;
+}
+
+/* Navigation */
+
+nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+nav a{
+
+    color:#50B59A;
+
+    text-decoration:none;
+
+    font-size:1.5rem;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    letter-spacing:2px;
+
+    opacity:.7;
+}

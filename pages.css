@@ -1,0 +1,416 @@
+body{
+
+    background-image: url("images/backgroundofsite.png");
+    background-repeat: repeat;
+    background-color: #2E120C;
+
+    color:#50B59A;
+
+    margin:0;
+}
+.decoration{
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 3000;
+
+    pointer-events: none;
+}
+
+.decoration img{
+
+    width:100%;
+}
+.header-image{
+
+
+    width:100%;
+
+    display:block;
+}
+.navbar{
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    z-index: 2000;
+}
+.logo{
+
+    width:850px;
+}
+nav{
+
+    display:flex;
+
+    gap:40px;
+}
+
+nav a{
+
+    font-family: "Marcellus", serif;
+
+    color:#50B59A;
+
+    text-decoration:none;
+
+    font-size:40px;
+
+    font-weight:bold;
+    
+}
+main{
+
+
+    width:80%;
+
+    margin:-530px auto;
+
+    padding:60px 0;
+
+    position:relative;
+}
+header{
+    position: relative;
+}
+nav a:hover{
+
+    opacity:.7;
+}
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+
+    justify-content:center;
+
+    gap:40px;
+
+    margin-top:-10px;
+}
+
+.category{
+
+    font-family: "Marcellus", serif;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    color:#50B59A;
+
+    transition:transform .2s;
+}
+
+.category:hover{
+
+    transform:scale(1.05);
+}
+
+.category img{
+
+    width:280px;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border:3px solid #50B59A;
+
+    border-radius:10px;
+
+    display:block;
+}
+
+.category p{
+
+    font-family: "Marcellus", serif;
+
+    margin-top:10px;
+
+    font-size:20px;
+}
+.art-gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+
+    gap:30px;
+
+    margin-top:40px;
+}
+
+.art-gallery img{
+
+    width:100%;
+
+    border-radius:8px;
+}
+.portfolio-section{
+
+    margin-bottom:100px;
+}
+
+.top-images{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    margin-bottom:40px;
+}
+
+.top-images img{
+
+    width:473px;
+    height:auto;
+
+    display:block;
+}
+
+.featured-piece{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:50px;
+
+    margin-bottom:100px;
+}
+
+.featured-piece img{
+
+    width:575px;
+
+    height:auto;
+
+    display:block;
+}
+
+.description{
+
+    font-family: "Marcellus", serif;
+
+    width:350px;
+}
+
+.about.me.description{
+
+    font-family: "Marcellus", serif;
+
+    font-size:25px;
+
+    width:350px;
+}
+
+.description h2{
+
+    margin-top:0;
+}
+footer{
+
+    position:relative;
+
+    width:100%;
+
+    margin-top: 500px;
+}
+
+footer img{
+
+    width:100%;
+
+    display:block;
+}
+#lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.9);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+}
+
+#lightbox.active{
+
+    display:flex;
+}
+
+#lightbox img{
+
+    max-width:90%;
+
+    max-height:90%;
+
+    object-fit:contain;
+}
+
+#close{
+
+    position:absolute;
+
+    top:30px;
+
+    right:40px;
+
+    font-size:50px;
+
+    color:white;
+
+    cursor:pointer;
+}
+.commissions-page{
+
+    width:80%;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    padding-bottom:100px;
+}
+.commission-status{
+
+    margin-bottom:60px;
+}
+
+.commission-status h1{
+
+    font-family:"Marcellus", serif;
+
+    font-size:48px;
+
+    color:#50B59A;
+
+    margin-bottom:20px;
+}
+
+.commission-status p{
+
+    font-size:22px;
+
+    max-width:700px;
+
+    margin:0 auto;
+
+    line-height:1.6;
+}
+.commission-sheet{
+
+    margin-bottom:60px;
+}
+
+.commission-sheet img{
+
+    width:100%;
+
+    max-width:900px;
+
+    height:auto;
+
+    border:3px solid #50B59A;
+
+    border-radius:10px;
+}
+.commission-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+}
+.commission-links a{
+
+    font-family:"Marcellus", serif;
+
+    font-size:28px;
+
+    color:#50B59A;
+
+    text-decoration:none;
+
+    border:2px solid #50B59A;
+
+    padding:15px 30px;
+
+    border-radius:8px;
+
+    transition:.25s;
+}
+.commission-links a:hover{
+
+    background:#50B59A;
+
+    color:#2E120C;
+}
+.open{
+    color:#78ff92;
+}
+.closed{
+    color:#ff7474;
+}
+.social-links{
+
+    position:absolute;
+
+    bottom:200px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:25px;
+}
+
+.social-links img{
+
+    width:52px;
+
+    height:52px;
+
+    transition:transform .2s, opacity .2s;
+}
+
+.social-links img:hover{
+
+    transform:scale(1.15);
+
+    opacity:.8;
+}
