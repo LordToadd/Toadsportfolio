@@ -1,0 +1,150 @@
+/* ===========================
+   Mobile Layout - LordToad
+   =========================== */
+
+/* General */
+
+body{
+    overflow-x:hidden;
+    background-size:cover;
+    background-position:center top;
+}
+
+/* Header */
+
+.navbar{
+    position:absolute;
+
+    top:20px;
+    left:0;
+    right:0;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:18px;
+}
+
+.logo{
+    width:220px;
+    max-width:70vw;
+    height:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px 22px;
+    width:100%;
+}
+
+nav a{
+    font-size:22px;
+}
+
+/* Main page */
+
+main{
+    width:92%;
+    margin:-90px auto 0;
+    padding-top:30px;
+    padding-bottom:60px;
+}
+
+/* Gallery page */
+
+.gallery-grid{
+    grid-template-columns:1fr;
+    width:92%;
+    margin:30px auto;
+    gap:20px;
+    justify-items:center;
+}
+
+.category{
+    width:100%;
+    max-width:320px;
+}
+
+.category img{
+    width:100%;
+    max-width:100%;
+    height:auto;
+}
+
+/* Artwork pages */
+
+.art-gallery{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.art-gallery img{
+    width:100%;
+}
+
+/* About page */
+
+.top-images,
+.featured-piece{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+}
+
+.top-images img,
+.featured-piece img{
+    width:100%;
+    max-width:420px;
+}
+
+.description{
+    width:100%;
+    text-align:center;
+}
+
+/* Commission page */
+
+.commissions-page{
+    width:92%;
+}
+
+.commission-links{
+    gap:20px;
+}
+
+.commission-links a{
+    font-size:22px;
+    padding:12px 20px;
+}
+
+/* Footer */
+
+footer{
+    margin-top:180px;
+}
+
+.social-links{
+    bottom:70px;
+    gap:18px;
+}
+
+.social-links img{
+    width:42px;
+    height:42px;
+}
+.decoration{
+    width:100%;
+    overflow:hidden;
+}
+
+.decoration img{
+    display:block;
+    width:100vw;
+    max-width:100vw;
+    height:auto;
+}
